@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-10-05T20:42:54.223405" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Test" source="C:\Users\asus\Desktop\test_software\New folder\Webdemo_Project\pythonProject1\Test_case\Login_Test.robot">
+<test id="s1-t1" name="Login with invalid Username And Valid password" line="7">
+<kw name="Launching the Browswer" owner="Test_Base" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-10-05T20:42:55.306156" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${Link}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-05T20:42:55.306156" elapsed="7.069286"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-05T20:43:02.375442" elapsed="0.068466"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${timeout}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-10-05T20:43:02.444414" elapsed="0.002166"/>
+</kw>
+<doc>opening the Browser</doc>
+<status status="PASS" start="2024-10-05T20:42:55.306156" elapsed="7.140424"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-05T20:43:02.446580" level="INFO">Typing text 'osa' into text field 'id:user-name'.</msg>
+<arg>${user_input}</arg>
+<arg>${invalidUserName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-05T20:43:02.446580" elapsed="0.247956"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-05T20:43:02.697624" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<arg>${pass_input}</arg>
+<arg>${valid Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-05T20:43:02.697624" elapsed="0.166884"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-05T20:43:02.866531" level="INFO">Clicking element 'id:login-button'.</msg>
+<arg>${Submit_Btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-05T20:43:02.864508" elapsed="0.109009"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-10-05T20:43:02.974563" level="INFO">Verifying element 'css:h3[data-test='error']' contains exact text 'Epic sadface: Username and password do not match any user in this service'.</msg>
+<arg>${Wrong_Creeds}</arg>
+<arg>Epic sadface: Username and password do not match any user in this service</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-10-05T20:43:02.973517" elapsed="0.041113"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Epic sadface: Username and password do not match any user in this service</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-05T20:43:03.014630" elapsed="0.001017"/>
+</kw>
+<doc>wrong Username And Valid password Should Fail</doc>
+<status status="PASS" start="2024-10-05T20:42:55.306156" elapsed="7.709491"/>
+</test>
+<test id="s1-t2" name="Login with valid Username And Invalid password" line="15">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-05T20:43:03.015647" level="INFO">Typing text 'secret_sauce' into text field 'id:user-name'.</msg>
+<arg>${user_input}</arg>
+<arg>${valid Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-05T20:43:03.015647" elapsed="0.150899"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-05T20:43:03.166546" level="INFO">Typing text 'test@12' into text field 'id:password'.</msg>
+<arg>${pass_input}</arg>
+<arg>${invalidPassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-05T20:43:03.166546" elapsed="0.161005"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-05T20:43:03.327551" level="INFO">Clicking element 'id:login-button'.</msg>
+<arg>${Submit_Btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-05T20:43:03.327551" elapsed="0.062923"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-10-05T20:43:03.390474" level="INFO">Verifying element 'css:h3[data-test='error']' contains exact text 'Epic sadface: Username and password do not match any user in this service'.</msg>
+<arg>${Wrong_Creeds}</arg>
+<arg>Epic sadface: Username and password do not match any user in this service</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-10-05T20:43:03.390474" elapsed="0.024745"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Epic sadface: Username and password do not match any user in this service</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-05T20:43:03.415219" elapsed="0.000000"/>
+</kw>
+<doc>Correct Username And Invalid password Should Fail</doc>
+<status status="PASS" start="2024-10-05T20:43:03.015647" elapsed="0.399572"/>
+</test>
+<test id="s1-t3" name="Login with Empty Creeds" line="22">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-10-05T20:43:03.425352" level="INFO">Executing JavaScript:
+window.open('https://www.saucedemo.com/','_blank')
+Without any arguments.</msg>
+<arg>window.open('https://www.saucedemo.com/','_blank')</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-10-05T20:43:03.424315" elapsed="0.060026"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-05T20:43:03.484341" level="INFO">Clicking element 'id:login-button'.</msg>
+<arg>${Submit_Btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-05T20:43:03.484341" elapsed="0.183347"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-10-05T20:43:03.667688" level="INFO">Verifying element 'css:h3[data-test='error']' contains exact text 'Epic sadface: Username and password do not match any user in this service'.</msg>
+<arg>${Wrong_Creeds}</arg>
+<arg>Epic sadface: Username and password do not match any user in this service</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-10-05T20:43:03.667688" elapsed="0.032656"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Epic sadface: Username and password do not match any user in this service</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-05T20:43:03.700344" elapsed="0.000000"/>
+</kw>
+<doc>Empty creeds should Fail</doc>
+<status status="PASS" start="2024-10-05T20:43:03.423722" elapsed="0.276622"/>
+</test>
+<test id="s1-t4" name="Login with Invalid Username and Password" line="28">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-05T20:43:03.704372" level="INFO">Typing text 'osa' into text field 'id:user-name'.</msg>
+<arg>${user_input}</arg>
+<arg>${invalidUserName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-05T20:43:03.704372" elapsed="0.119351"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-05T20:43:03.824336" level="INFO">Typing text 'test@12' into text field 'id:password'.</msg>
+<arg>${pass_input}</arg>
+<arg>${invalidPassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-05T20:43:03.824336" elapsed="0.136684"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-05T20:43:03.961020" level="INFO">Clicking element 'id:login-button'.</msg>
+<arg>${Submit_Btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-05T20:43:03.961020" elapsed="0.059937"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-10-05T20:43:04.021204" level="INFO">Verifying element 'css:h3[data-test='error']' contains exact text 'Epic sadface: Username and password do not match any user in this service'.</msg>
+<arg>${Wrong_Creeds}</arg>
+<arg>Epic sadface: Username and password do not match any user in this service</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-10-05T20:43:04.021204" elapsed="0.026444"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Epic sadface: Username and password do not match any user in this service</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-05T20:43:04.047648" elapsed="0.000000"/>
+</kw>
+<doc>wrong creeds should Fail</doc>
+<status status="PASS" start="2024-10-05T20:43:03.703352" elapsed="0.344296"/>
+</test>
+<test id="s1-t5" name="Login with Valid Username and Password" line="35">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-05T20:43:04.050708" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>${user_input}</arg>
+<arg>${Valid username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-05T20:43:04.047648" elapsed="0.127842"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-05T20:43:04.175490" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<arg>${pass_input}</arg>
+<arg>${valid Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-05T20:43:04.175490" elapsed="0.136317"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-05T20:43:04.311807" level="INFO">Clicking element 'id:login-button'.</msg>
+<arg>${Submit_Btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-05T20:43:04.311807" elapsed="0.113683"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-10-05T20:43:04.427015" level="INFO">Verifying element 'css:.title' contains exact text 'Products'.</msg>
+<arg>${HeadPage}</arg>
+<arg>Products</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-10-05T20:43:04.427015" elapsed="0.040416"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Products</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-05T20:43:04.467431" elapsed="0.000000"/>
+</kw>
+<kw name="Closing The Browser" owner="Test_Base" type="TEARDOWN">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${timeout}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-10-05T20:43:04.467431" elapsed="0.003652"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-05T20:43:04.471383" elapsed="2.292968"/>
+</kw>
+<doc>Closing the Browser</doc>
+<status status="PASS" start="2024-10-05T20:43:04.467431" elapsed="2.296920"/>
+</kw>
+<doc>Correct creeds should be sucessful</doc>
+<status status="PASS" start="2024-10-05T20:43:04.047648" elapsed="2.716703"/>
+</test>
+<status status="PASS" start="2024-10-05T20:42:54.304314" elapsed="12.460037"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Login Test">Login Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,8 @@
+Sort_PRODUCT="css:.product_sort_container"
+Name_A_To_Z="az"
+Name_Z_To_A="za"
+Price_low_to_high="lohi"
+Price_high_to_low="hilo"
+Product="class:inventory_item_name"
+List_Product="Sauce Labs Backpack","Sauce Labs Bike Light","Sauce Labs Bolt T-Shirt","Sauce Labs Fleece Jacket","Sauce Labs Onesie","Test.allTheThings() T-Shirt (Red)"
+Product_Title="css:.title"
