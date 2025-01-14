@@ -1,0 +1,8 @@
+# Ignore HTML files
+*.html
+
+# Ignore XML files
+*.xml
+
+# Ignore .idea directory
+.idea/
