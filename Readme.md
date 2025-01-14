@@ -1,4 +1,4 @@
-Automation Project: Robot Framework with ATDD, Python, and Selenium
+## Automation Project: Robot Framework with ATDD, Python, and Selenium
 
 This project showcases automated and manual testing of a website's key functionalities, leveraging modern tools and best practices. It follows the Page Object Model (POM) design pattern for improved maintainability and scalability.
 
