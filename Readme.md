@@ -20,7 +20,7 @@ The primary objective of this project is to validate website functionality both 
 
 - **Login Functionality**: Validated the ability to log in with various user roles and credentials.
 
-- ## Add to Cart: Ensured products can be added to the cart and reflected correctly.
+- **Add to Cart**: Ensured products can be added to the cart and reflected correctly.
 
 - **Product Sorting**: Verified sorting options (e.g., price, popularity) work as expected.
 
