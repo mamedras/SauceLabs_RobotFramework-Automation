@@ -2,11 +2,11 @@
 
 This project showcases automated and manual testing of a website's key functionalities, leveraging modern tools and best practices. It follows the Page Object Model (POM) design pattern for improved maintainability and scalability.
 
-Overview
+## Overview
 
 The primary objective of this project is to validate website functionality both manually and automatically using the Robot Framework. The automation focuses on key user workflows, including login, product management, and order processing, ensuring alignment with the defined requirements.
 
-##Tools and Technologies Used
+## Tools and Technologies Used
 
 Robot Framework: For automated acceptance testing and ATDD (Acceptance Test-Driven Development).
 
@@ -28,7 +28,7 @@ Order Placement: Tested the end-to-end checkout process, including order confirm
 
 Requirement Functions: Verified specific functional requirements as outlined in the project's scope.
 
-##Testing Approach
+## Testing Approach
 
 Manual Testing
 
@@ -36,7 +36,7 @@ Conducted exploratory testing to identify potential usability issues.
 
 Verified edge cases and scenarios not covered by automated tests.
 
-##Automated Testing
+## Automated Testing
 
 ATDD Approach: Created test scenarios based on acceptance criteria provided by stakeholders.
 
@@ -64,7 +64,7 @@ View the test reports:
 
 Test logs and reports are generated in the results folder.
 
-##Project Highlights
+## Project Highlights
 
 Followed ATDD to bridge the gap between development and stakeholder expectations.
 
