@@ -44,7 +44,7 @@ The primary objective of this project is to validate website functionality both 
 
 - **Selenium WebDriver:** Used for web interactions, such as clicking, filling forms, and validating UI elements.
 
-## Note ##: Cross-browser testing was not conducted as part of this project.
+## Note: Cross-browser testing was not conducted as part of this project.
 
 ## How to Run the Tests
 
