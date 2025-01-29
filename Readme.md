@@ -1,77 +1,65 @@
-## Automation Project: Robot Framework with ATDD, Python, and Selenium
+# 🚀 Automation Project: Robot Framework with ATDD, Python, and Selenium
+# 📌 Overview
+This project demonstrates automated and manual testing of a website’s core functionalities, using the Robot Framework, Python, and Selenium. The automation adheres to the Page Object Model (POM) design pattern to enhance maintainability, scalability, and reusability of the test code.
+The primary objective of this project is to validate the website’s functionality, including user workflows like login, product management, and order processing, both manually and automatically. These tests ensure the platform meets its defined requirements.
+# ⚙️ Tools and Technologies Used
 
-This project showcases automated and manual testing of a website's key functionalities, leveraging modern tools and best practices. It follows the Page Object Model (POM) design pattern for improved maintainability and scalability.
+- **Robot Framework**: Used for automated acceptance testing and ATDD (Acceptance Test-Driven Development).
 
-## Overview
+- **Python**:The programming language used to develop custom test libraries and scripts.
 
-The primary objective of this project is to validate website functionality both manually and automatically using the Robot Framework. The automation focuses on key user workflows, including login, product management, and order processing, ensuring alignment with the defined requirements.
+- **Selenium**: Provides browser automation for UI testing (web interactions like clicking, filling forms, etc.)..
 
-## Tools and Technologies Used
+- **Page Object Model (POM)**: A design pattern to organize the test code into reusable, modular componentsy.
 
-- **Robot Framework**: For automated acceptance testing and ATDD (Acceptance Test-Driven Development).
+# 🧪 Features Tested
 
-- **Python**: As the programming language for custom test libraries.
+- **Login Functionality**: Validates that users can log in with different roles and credentials.
 
-- **Selenium**: For web browser automation.
+- **Add to Cart**: Ensures that products can be added to the shopping cart and correctly reflected.
 
-- **Page Object Model (POM)**: A design pattern to organize test code for better reusability and readability.
+- **Product Sorting**: Verifies that sorting options (e.g., price, popularity) work as intended.
 
-## Features Tested
+- **Order Placement**: Tests the end-to-end checkout process, ensuring proper order confirmation.
 
-- **Login Functionality**: Validated the ability to log in with various user roles and credentials.
+- **Requirement Functions**: Verifies that all specific functional requirements are covered as per the project’s scope.
 
-- **Add to Cart**: Ensured products can be added to the cart and reflected correctly.
-
-- **Product Sorting**: Verified sorting options (e.g., price, popularity) work as expected.
-
-- **Order Placement**: Tested the end-to-end checkout process, including order confirmation.
-
-- **Requirement Functions**: Verified specific functional requirements as outlined in the project's scope.
-
-## Testing Approach
-
-**Manual Testing**
-
-- Conducted exploratory testing to identify potential usability issues.
-
-- Verified edge cases and scenarios not covered by automated tests.
-
-**Automated Testing**
-
+# 📝 Testing Approach
+# 1️⃣ Manual Testing
+- **Exploratory Testing:** Conducted manual exploratory tests to uncover potential usability issues.
+- **Edge Case Testing:** Verified scenarios that automated tests might not cover.
+# 2️⃣ Automated Testing
 - **ATDD Approach:** Created test scenarios based on acceptance criteria provided by stakeholders.
-
 - **POM Design:** Structured test scripts for modularity and ease of updates.
+- **Selenium WebDriver:** Used to perform web interactions like clicking, form submissions, and validating UI elements.
+# Note: Cross-browser testing was not conducted as part of this project.
 
-- **Selenium WebDriver:** Used for web interactions, such as clicking, filling forms, and validating UI elements.
+# 🛠️ How to Run the Tests
 
-## Note: Cross-browser testing was not conducted as part of this project.
-
-## How to Run the Tests
-
-1. **Clone this repository**:
+1. **1️⃣ Clone the Repository**:
 
 ```sh
 git clone <repository-url>
 ```
-2. **Install the required dependencies**:
+2. **2️⃣ Install Required Dependencies**:
 ```sh
 pip install -r requirements.txt
 ```
-3.**Run the automated tests**:
+3.** 3️⃣ Run the Automated Tests **:
 ```sh
-robot -d results tests/
+robot -d LoginResult tests/
 ```
-4.**View the test reports**:
-
-**Test logs and reports are generated in the results folder**.
-## Project Highlights
-- Followed ATDD to bridge the gap between development and stakeholder expectations.
-- Ensured test scalability with the POM framework.
-- Improved website reliability by validating core functionalities automatically.
-## screenshots of failed tests
+4.**4️⃣ View Test Reports**:
+**Test logs and reports will be generated in the LoginResult/ folder. You can open these reports to view test execution details and outcomes.**
+# Project Highlights
+- Followed ATDD principles to align development efforts with stakeholder expectations.
+- Ensured scalability of tests using the POM framework.
+- Validated core website functionalities, improving overall site reliability by automating critical workflows.
+- Leveraged Robot Framework, Python, and Selenium for an efficient and maintainable automation setup.
+# 🖼️ Screenshots of Failed Tests
 - **screenshot 1**:![selenium-screenshot-18](https://github.com/user-attachments/assets/99a680f0-5828-4122-be08-425d1d793f9d)
 - **screenshot 2**:![selenium-screenshot-2](https://github.com/user-attachments/assets/42a2e175-1b20-4d15-baee-53c50c52b43e)
 - **screenshot 3**:![selenium-screenshot-4](https://github.com/user-attachments/assets/d17fff2a-9c3d-46b4-998f-bb63211ef55d)
-## test documentation 
+# 📄 Test Documentation
 - **test case**:[https://docs.google.com/spreadsheets/d/1ODGU2cPirxcl9CHDJhzdf84QIeR7ovBsek704sO9ZpA/edit?gid=1026433765#gid=1026433765]
 - **Bug report**:[https://docs.google.com/spreadsheets/d/1Yl7HQA33fdUgWil-AJVE7Z6vC4u6MBpwX6euKpTaRjw/edit?gid=0#gid=0]
