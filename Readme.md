@@ -47,10 +47,8 @@ pip install -r requirements.txt
 ```
 3.** 3️⃣ Run the Automated Tests **:
 ```sh
-robot -d LoginResult tests/
+robot -d Test_case tests/
 ```
-4.**4️⃣ View Test Reports**:
-**Test logs and reports will be generated in the LoginResult/ folder. You can open these reports to view test execution details and outcomes.**
 # Project Highlights
 - Followed ATDD principles to align development efforts with stakeholder expectations.
 - Ensured scalability of tests using the POM framework.
