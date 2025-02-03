@@ -47,7 +47,7 @@ pip install -r requirements.txt
 ```
 3.** 3️⃣ Run the Automated Tests **:
 ```sh
-robot -d results tests/
+robot -d Test_case tests/
 ```
 # Project Highlights
 - Followed ATDD principles to align development efforts with stakeholder expectations.
